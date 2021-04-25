@@ -1,0 +1,28 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRmFtaWwiLCJpYXQiOjE2MTkzNjQxMzksImV4cCI6MTYxOTM2NDE5OX0.MHn0IBvk8QnOAQLR7C9UXIvSmDbwK2vvOnMRWruuoRw
+
+###
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username":"Famil"
+}
+
+###
+
+POST http://localhost:4000/token 
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRmFtaWwiLCJpYXQiOjE2MTkzNjQ1NzV9._1lYLxaUV3cvpbRNKRj9WiQV1ulr-2aIpmqIMuVPwr4"
+}
+
+###
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRmFtaWwiLCJpYXQiOjE2MTkzNjQ1NzV9._1lYLxaUV3cvpbRNKRj9WiQV1ulr-2aIpmqIMuVPwr4"
+}
